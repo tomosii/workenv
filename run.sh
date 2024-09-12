@@ -7,7 +7,6 @@ CMD="/bin/bash"
 
 docker run -t -d --rm \
     --gpus all \
-    -u $(id -u):$(id -g) \
-    -v $(pwd):/workspace \
+    -v ~/:/workspace \
     -e WANDB_API_KEY=$WANDB_API_KEY \
     --name $CONTAINER_NAME $IMAGE_NAME
