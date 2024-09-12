@@ -1,0 +1,26 @@
+# gym
+# gymnasium
+# minigrid
+# mujoco
+# minerl-navigate
+wandb
+matplotlib
+tqdm
+hydra-core
+opencv-python
+torch
+torchvision
+tensorflow
+tensorflow-probability
+tensorflow-datasets
+keras
+pixyz
+torch_ac
+pyglet
+pyYAML
+scikit-image
+imageio
+av
+natsort
+moviepy
+imageio
