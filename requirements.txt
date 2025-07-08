@@ -24,3 +24,6 @@ av
 natsort
 moviepy
 imageio
+
+minari[all]
+gymnasium_robotics

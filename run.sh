@@ -9,4 +9,5 @@ docker run -t -d --rm \
     --gpus all \
     -v ~/:/workspace \
     -e WANDB_API_KEY=$WANDB_API_KEY \
+    -e MUJOCO_GL=egl \
     --name $CONTAINER_NAME $IMAGE_NAME
