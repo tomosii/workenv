@@ -3,6 +3,9 @@
 # minigrid
 # mujoco
 # minerl-navigate
+# minari[all]
+# gymnasium_robotics
+
 wandb
 matplotlib
 tqdm
@@ -24,6 +27,5 @@ av
 natsort
 moviepy
 imageio
-
-minari[all]
-gymnasium_robotics
+seaborn
+scikit-learn
