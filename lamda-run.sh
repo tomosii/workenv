@@ -9,8 +9,17 @@ cd ~/
 git clone git@github.com:tomosii/hierarchical-wm.git
 
 
-mkdir -p ~/hierarchical-wm/src/sunta/data/
-cp -r -u ~/iiyama/dataset/serial_nine_rooms ~/hierarchical-wm/src/sunta/data/
+
+# Dataset Preparation
+
+# wget https://iiyama-dataset.s3.us-east-1.amazonaws.com/serial_nine_rooms.tar.gz
+
+# tar -xzf serial_nine_rooms.tar.gz
+
+# mkdir -p ~/hierarchical-wm/src/sunta/data/
+# cp -r -u ~/serial_nine_rooms ~/hierarchical-wm/src/sunta/data/
+
+
 
 
 
@@ -22,8 +31,10 @@ cp -r -u ~/iiyama/dataset/serial_nine_rooms ~/hierarchical-wm/src/sunta/data/
 #     --name $CONTAINER_NAME $IMAGE_NAME
 
 
+echo "\nStarting container..."
 
 if [ "$(sudo docker ps -q -f name=$CONTAINER_NAME)" ]; then
+    echo "\nFound existing container."
     sudo docker exec -t -d -e WANDB_API_KEY=$WANDB_API_KEY $CONTAINER_NAME bash /workspace/workenv/train.sh
 else
     # sudo docker rm -f $CONTAINER_NAME || true
@@ -37,3 +48,7 @@ else
         # bash
 fi
 
+
+echo "\nContainer started and running script in background..."
+
+echo "\nScript finished."
