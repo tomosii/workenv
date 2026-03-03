@@ -23,7 +23,7 @@ python3 train.py \
     dataset=serial_nine_rooms \
     model=sunta \
     train_level=1 \
-    l1_deter_size=1024 \
+    l1_deter_size=2048 \
     l1_stoch_size=64 \
     total_steps=500000 \
     batch_size=32 \

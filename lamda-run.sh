@@ -31,10 +31,10 @@ git clone git@github.com:tomosii/hierarchical-wm.git
 #     --name $CONTAINER_NAME $IMAGE_NAME
 
 
-echo "\nStarting container..."
+echo -e "\nStarting container..."
 
 if [ "$(sudo docker ps -q -f name=$CONTAINER_NAME)" ]; then
-    echo "\nFound existing container."
+    echo -e "\nFound existing container."
     sudo docker exec -t -d -e WANDB_API_KEY=$WANDB_API_KEY $CONTAINER_NAME bash /workspace/workenv/train.sh
 else
     # sudo docker rm -f $CONTAINER_NAME || true
@@ -49,6 +49,6 @@ else
 fi
 
 
-echo "\nContainer started and running script in background..."
+echo -e "\nContainer started and running script in background..."
 
-echo "\nScript finished."
+echo -e "\nScript finished."
