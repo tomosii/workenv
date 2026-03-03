@@ -13,11 +13,14 @@ git clone git@github.com:tomosii/hierarchical-wm.git
 # Dataset Preparation
 
 # wget https://iiyama-dataset.s3.us-east-1.amazonaws.com/serial_nine_rooms.tar.gz
+# wget https://iiyama-dataset.s3.us-east-1.amazonaws.com/mesh_nine_rooms.tar.gz
 
 # tar -xzf serial_nine_rooms.tar.gz
+# tar -xzf mesh_nine_rooms.tar.gz
 
 # mkdir -p ~/hierarchical-wm/src/sunta/data/
 # cp -r -u ~/serial_nine_rooms ~/hierarchical-wm/src/sunta/data/
+# cp -r -u ~/mesh_nine_rooms ~/hierarchical-wm/src/sunta/data/
 
 
 

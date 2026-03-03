@@ -20,20 +20,20 @@ cd hierarchical-wm/src/sunta
 
 
 python3 train.py \
-    dataset=serial_nine_rooms \
+    dataset=mesh_nine_rooms \
     model=sunta \
     train_level=1 \
-    l1_deter_size=2048 \
-    l1_stoch_size=64 \
+    l1_deter_size=512 \
+    l1_stoch_size=32 \
     total_steps=500000 \
     batch_size=32 \
-    train_sequence_length=344 \
-    test_sequence_length=344 \
+    train_sequence_length=100 \
+    test_sequence_length=100 \
     context_length=100 \
     test_every=50000 \
-    save_checkpoint_every=20000 \
+    save_checkpoint_every=1000 \
     seed=0 \
-    decoder_input=state_feature \
+    # decoder_input=state_feature \
     # test_every=1 \
 
 
